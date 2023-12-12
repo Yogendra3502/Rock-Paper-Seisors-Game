@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1513151233558-d860c5398176?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14vh;
+    color: #ffff;
+    font-family: cursive;
+    background-color: rgb(156, 171, 22);
+
+}
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    height: 40vh;
+}
+.choice{
+    background-color: red;
+    border-radius: 10vw;
+    width: 17%;
+    height: 17vw;
+
+}
+.choice:hover{
+    opacity: 1.8;
+    /* scale: 0.8; */
+    border: 3px solid black;
+}
+.choice img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20vh;
+    object-fit: cover;
+}
+.score-bord{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    gap: 10vw;
+    font-size: 3vw;
+}
+#user-score , #comp-score{
+    color: #000;
+    font-size: 5vw;
+}
+.msg-container{
+    text-align: center;
+    margin-top: 5vw;
+    border: 10px;
+}
+#msg{
+    border-radius: 1vw;
+    display: inline;
+    padding: 2vw ;
+    background-color: rebeccapurple;
+    color: #bbb;
+    font-size: 2vw;
+    margin-top:3vw ;
+}
+@media (max-width:600px) {
+    nav{
+        background-color: rgb(156, 171, 22);
+    }
+    .choices{
+        gap: 12vw;
+        height: 60vh;
+    }
+    .choice{
+        background-color: red;
+        border-radius: 12vw;
+        width: 30%;
+        height: 30vw;
+    
+    }
+    .choice:hover{
+        opacity: 1.8;
+        /* scale: 0.8; */
+        border: 3px solid black;
+    }
+    .choice img{
+        width: 100%;
+        height: 100%;
+        border-radius: 12vw;
+        object-fit: cover;
+    }
+    .score-bord{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vw;
+        gap: 10vw;
+        font-size: 8vw;
+    }
+    #user-score , #comp-score{
+        color: #000;
+        font-size: 10vw;
+    }
+    .msg-container{
+        text-align: center;
+        margin-top: 20vw;
+        border: 10px;
+    }
+    #msg{
+        border-radius: 1vw;
+        display: inline;
+        padding: 2vw ;
+        background-color: rebeccapurple;
+        color: #bbb;
+        font-size: 3vw;
+        margin-top:10vw ;
+    }
+}
